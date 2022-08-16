@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora do semestre</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var n1 = Number(window.prompt(" Informe o primeiro valor: "));
+        var n2 = Number(window.prompt(" Informe o segundo valor: "));
+        var resultado = (n1 + n2)/2;
+        window.alert(`A média da soma foi de ${resultado}`); // usando templete string(` asasas ${n}`) inves de concatenação(" dsdasd: "+ n)
+    </script>
+    <script>
+        //Problema da variavel não realizar soma
+        //O comando Window.promt retorna valor string independente se digitar valor inteiro ou boolean, para resolução exemplos abaixo
+        
+        /*var n1 = window.prompt(" Informe o primeiro valor: ");
+        var n2 = window.prompt(" Informe o segundo valor: ");
+        var resultado = n1 + n2;
+        window.alert("Sua média foi: "+ resultado);*/ 
+        
+        // transformar de string para inteiro forçando 
+        /*
+        var n1 = Number.parseInt(window.prompt(" Informe o primeiro valor: "));
+        var n2 = Number.parseInt(window.prompt(" Informe o segundo valor: "));
+        var resultado = n1 + n2;
+        window.alert("Sua média foi: "+ resultado);*/
+
+        // transformar de string para float forçando 
+        /*
+        var n1 = Number.parseFloat(window.prompt(" Informe o primeiro valor: "));
+        var n2 = Number.parseFloat(window.prompt(" Informe o segundo valor: "));;
+        var resultado = n1 + n2;
+        window.alert("Sua média foi: "+ resultado);*/
+    </script>
+
+    <script>
+        /* transformar de number(inteiro e float) para string
+        var n1 = String(window.prompt(" Informe o primeiro valor: ")); // primeira forma de converter
+        var n1 = window.prompt(" Informe o primeiro valor: ").toString; // Segunda forme de converter
+        var resultado = n1 + n2;
+        window.alert("Sua média foi: "+ resultado);*/
+    </script>
+</body>
+</html>
